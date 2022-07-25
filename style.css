@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/**rgba(0, 0, 27, 0.897);**/
+.one-quarter-row{
+    width: 25%;
+    background-color: rgba(8, 8, 51, 0.74);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+} 
+
+.search-bar{
+    border: none;
+    margin: 15px 0 0 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.search-bar input{
+    width: 120px;
+    height: 20px;
+    background-color: rgba(224, 216, 216, 0.521);
+    color: white !important;
+}
+
+input::placeholder{
+    padding-left: 4px;
+    font-size: 12px;
+    font-family: 'Raleway';
+    color: rgba(219, 219, 219, 0.808);
+}
+
+.cloud-image{
+    margin: 100px 0 0 50px;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.temperature{
+    text-align: center;
+}
+
+.temp-number{
+    font-family: 'Raleway', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: lighter;
+    font-size: 100px;
+    line-height: 0;
+    margin-bottom: 70px;
+}
+
+.temp-symbol{
+    font-size: 45px;
+    color: rgba(219, 219, 219, 0.808) !important;
+    font-weight: normal;
+    text-shadow: 10px black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.temp-description{
+    line-height: 0;
+    margin-top: 13vh;
+    margin-bottom: 0;
+    text-align: center;
+    color: rgba(219, 219, 219, 0.808);
+    font-weight: 650;
+    font-size: 1.32rem;
+    font-family: 'Raleway', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.weather-date{
+    margin-top: 8vh;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(219, 219, 219, 0.808);
+    word-spacing: 1.75px;
+}
+
+sup{
+    vertical-align: top;
+    font-weight: bolder;
+}
+
+.weather-location{
+    margin-top: 25px;
+    margin-bottom: 13px;
+    text-align: center;
+    font-size: 11px;
+    color:rgba(219, 219, 219, 0.808);
+    font-family: 'Raleway' system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu;
+}
+
+.two-third-row{
+    width: 75%;
+    background-color: rgba(0, 0, 27, 0.959);
+}
+
+.main-content{
+    margin: 20px 100px 20px 100px;
+    color: white;
+    display: flex;
+}
+
+.degree-icon{
+    padding-top: 10px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}

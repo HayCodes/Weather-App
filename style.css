@@ -7,15 +7,16 @@
     display: flex;
     align-items: stretch;
     width: 100%;
-    height: 100%;
+    height: 720px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 /**rgba(0, 0, 27, 0.897);**/
 .one-quarter-row{
     width: 25%;
-    background-color: rgba(8, 8, 51, 0.74);
+    background-color: rgba(56, 56, 100);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    height: 100%;
 
 } 
 
@@ -126,7 +127,7 @@ sup{
 
 .weekly-forecast{
     width: 100%;
-    margin-top: 45px;
+    margin-top: 25px;
     display: flex;
     flex-direction: row;
 }
@@ -134,7 +135,7 @@ sup{
 .day1, .day2, .day3, .day4, .day5{
     background-color: rgb(56, 56, 100);
     width: 20%;
-    padding: 0px;
+    padding: 0;
     text-align: center;
     margin: 10px;
 }
@@ -145,7 +146,7 @@ sup{
 
 .morning-temp{
     text-align: left;
-    padding-left: 25px;
+    padding-left: 38px;
     padding-right: 0;
     font-family: 'Raleway', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -158,8 +159,112 @@ sup{
 }
 
 .highlights{
-    padding-top: 30px;
+    padding-top: 15px;
     margin-left: 10px;
     font-weight: bold;
     font-size: larger;
+}
+
+.highlights-content{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.highlight-info-top{
+    text-align: center;
+    width: 45%;
+    margin: 10px 40px 0 40px;
+    background-color: rgb(56, 56, 100);
+    font-weight: normal;
+    font-size: small;
+    color: rgba(219, 219, 219, 0.808);
+}
+
+.wind-value{
+    font-weight: bolder;
+    color: white;
+    font-family: 'Raleway', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    line-height: 0;
+}
+
+.wind-unit{
+     color: rgba(219, 219, 219, 0.808) !important;
+     font-size: xx-large;
+     font-weight: normal;
+     margin-top: 0;
+     padding: 0;
+     line-height: 0;
+}
+
+.humidity-value{
+    font-weight: bolder;
+    color: white;
+    font-family: 'Raleway', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    line-height: 0;
+}
+
+.humidity-unit{
+    color: rgba(219, 219, 219, 0.808) !important;
+     font-size: xx-large;
+     font-weight: normal;
+     margin-top: 0;
+     padding: 0;
+     line-height: 0;
+}
+
+.highlight-info-bottom{
+    text-align: center;
+    width: 45%;
+    margin: 10px 40px 0 40px;
+    background-color: rgb(56, 56, 100);
+    font-weight: normal;
+    font-size: small;
+    color: rgba(219, 219, 219, 0.808);
+}
+
+.visibility-value{
+    font-weight: bolder;
+    color: white;
+    font-family: 'Raleway', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    line-height: 0;
+}
+
+.visibility-unit{
+    color: rgba(219, 219, 219, 0.808) !important;
+     font-size: xx-large;
+     font-weight: normal;
+     margin-top: 0;
+     padding: 0;
+     line-height: 0;
+}
+
+.airpressure-value{
+    font-weight: bolder;
+    color: white;
+    font-family: 'Raleway', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    line-height: 0;
+}
+
+.airpressure-unit{
+    color: rgba(219, 219, 219, 0.808) !important;
+     font-size: xx-large;
+     font-weight: normal;
+     margin-top: 0;
+     padding: 0;
+     line-height: 0;
+}
+
+footer{
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif, Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    font-size: small;
+    color: rgba(219, 219, 219, 0.808);
 }

@@ -488,6 +488,8 @@ footer{
   
     .weather-location{
         padding-top: 0;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
     }
     .main-content{
         margin: 20px 30px 10px 30px;
@@ -507,37 +509,111 @@ footer{
     .afternoon-temp{
         padding-left: 15px;
     }
-    .highlights{
-        margin-top: 5%;
-        margin-left: 10px;
-        font-weight: bold;
-        font-size: large;
+
+}
+
+@media screen and (min-width: 800px) {
+    .container{
+        margin-left: 20px;
     }
-    .highlights-content{
-            width: 100%;
-            margin-top: 15px;
-            display: flex;
-            flex-direction: row;
-            height: 120px;
-    }
-    .highlight-header{
-        margin-top: 5px;
-    }
-    .wind-value, .humidity-value, .visibility-value,
-    .airpressure-value{
-        font-size: 40px;
-    }
-    .wind-unit, .humidity-unit, .visibility-unit,
-    .airpressure-unit{
-        font-size: x-large;
-    }
-    .highlight-info-top, .highlight-info-bottom{
-        margin: 10px 40px 10px 40px;
-    }
-    footer{
-        padding: 8px 0 0 0;
-        margin-bottom: 0;
-        margin-top: 10px;
+    
+    .temperature{
+        margin-left: 10%;
+        margin-top: 25%;
+        margin-bottom: 25%;
+        padding: 0;
     }
 
+    .one-quarter-row{
+        width: 30%;
+    }
+
+    .cloud-image{
+        width: 65%;
+        margin-left: 17%;
+    }
+
+    .temp-description{
+        padding-top: 10%;
+        margin-bottom: 0;
+    }
+
+    .weather-date{
+        padding-top: 0;
+    }
+  
+    .weather-location{
+        padding-top: 0;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+    .main-content{
+        margin: 20px 30px 10px 30px;
+    }
+    .day1,.day2,.day3,.day4,
+    .day5 {
+        width: 20%;
+        padding: 5px 0;
+        font-size: 14px;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .morning-temp{
+        padding-left: 5px;
+    }
+    .afternoon-temp{
+        padding-left: 15px;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .day1, .day2, .day3, .day4, .day5 > p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .wind-value, .visibility-value, 
+    .airpressure-value, .humidity-value{
+        font-size: 40px;
+    }
+
+    .wind-unit, .visibility-unit, 
+    .airpressure-unit, .humidity-unit{
+        font-size: 25px;
+    }
+
+    .highlight-info-top, .highlight-info-bottom{
+        margin: 10px 30px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .main-content{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .wind-value, .visibility-value, 
+    .airpressure-value, .humidity-value{
+        font-size: 40px;
+    }
+
+    .wind-unit, .visibility-unit, 
+    .airpressure-unit, .humidity-unit{
+        font-size: 25px;
+    }
+
+    .highlight-info-top, .highlight-info-bottom{
+        margin: 10px 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main-content{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }

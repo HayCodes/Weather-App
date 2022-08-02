@@ -2,67 +2,81 @@
 
 *{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 .container{
     display: flex;
     align-items: stretch;
     width: 100%;
-    height: 720px;
+    height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    margin: 30px;
+    flex-wrap: wrap;
 }
+
+/** side content **/
 /**rgba(0, 0, 27, 0.897);**/
 .one-quarter-row{
     width: 25%;
-    background-color: rgba(56, 56, 100);
+    background-color: rgb(37, 37, 73);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    height: 100%;
+    overflow: none;
+    height: max-content;
+}
 
-} 
-
-.search-bar{
-    border: none;
-    margin: 15px 0 0 15px;
+form{
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+.search-bar{
+    margin: 15px;
+    border: none;
+    width: 90%;
+    height: 10%;
+    display: flex;
 }
 
 .search-bar input{
-    width: 120px;
+    width: 70%;
     height: 20px;
     background-color: rgba(224, 216, 216, 0.521);
     color: white !important;
 }
 
 input::placeholder{
-    padding-left: 4px;
+    padding-left: 15px;
+    text-align: center;
     font-size: 12px;
     font-family: 'Raleway';
     color: rgba(219, 219, 219, 0.808);
 }
 
 .cloud-image{
-    margin: 100px 0 0 50px;
-    justify-items: center;
-    display: flex;
-    flex-direction: column;
+   max-width: 100%;
+   width: 40%;
+   margin: 15% 25%;
 }
 
 .temperature{
     text-align: center;
+    padding: 15% 25%;
 }
 
 .temp-number{
     font-family: 'Raleway', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     font-weight: lighter;
-    font-size: 100px;
+    font-size: 120px;
     line-height: 0;
-    margin-bottom: 70px;
 }
 
 .temp-symbol{
-    font-size: 45px;
+    font-size: 60px;
     color: rgba(219, 219, 219, 0.808) !important;
     font-weight: normal;
     text-shadow: 10px black;
@@ -71,8 +85,7 @@ input::placeholder{
 
 .temp-description{
     line-height: 0;
-    margin-top: 13vh;
-    margin-bottom: 0;
+    margin: 15% 25% 0 25%;
     text-align: center;
     color: rgba(219, 219, 219, 0.808);
     font-weight: 650;
@@ -81,7 +94,7 @@ input::placeholder{
 }
 
 .weather-date{
-    margin-top: 8vh;
+    margin-top: 15%;
     text-align: center;
     font-size: 12px;
     color: rgba(219, 219, 219, 0.808);
@@ -95,22 +108,30 @@ sup{
 
 .weather-location{
     margin-top: 25px;
-    margin-bottom: 13px;
+    margin-bottom: 15px;
     text-align: center;
     font-size: 11px;
     color:rgba(219, 219, 219, 0.808);
     font-family: 'Raleway' system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu;
+    line-height: 0;
 }
 
+.locator-icon{
+    margin-top: 10px;
+}
+/**end of side content**/
+
+
+/** main content **/
 .two-third-row{
-    width: 75%;
+    width: 65%;
     background-color: rgba(0, 0, 27, 0.959);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
 .main-content{
-    margin: 20px 100px 20px 100px;
+    margin: 20px 90px 20px 90px;
     color: white;
     /**display: block (in order to make the sections dropdown*/
     display: block;
@@ -120,33 +141,59 @@ sup{
     margin-right: 5px;
     margin-top: 13px;
     margin-bottom: 5px;
-    background-color: white;
-    color: blue;
+    display: flex;
     margin-left: 15px;
+    justify-content: right;
+}
+
+.celsius-icon{
+    background: fixed;
+    background-color: rgba(219, 219, 219, 0.808);
+    border-radius: 50%;
+    align-items: center;
+    padding: 4px;    
+    border-style: hidden;
+    margin: 0 10px 0 0;
+    line-height: 0;
+    cursor: pointer;
+}
+
+.fahrenheit-icon{
+    background: fixed;
+    background-color: rgb(37, 37, 73);
+    border-radius: 50%;
+    align-items: center;
+    padding: 4px;    
+    border-style: hidden;
+    margin: 0 5px 0 0 ;
+    line-height: 0;
+    cursor: pointer;
 }
 
 .weekly-forecast{
     width: 100%;
-    margin-top: 25px;
+    margin-top: 15px;
     display: flex;
     flex-direction: row;
 }
 
 .day1, .day2, .day3, .day4, .day5{
-    background-color: rgb(56, 56, 100);
-    width: 20%;
+    background-color: rgb(37, 37, 73);
+    width: 15%;
     padding: 0;
     text-align: center;
-    margin: 10px;
+    margin: 20px;
 }
 
 .weekly-weather{
-    width: 45%;
+    width: 60%;
+    margin-top: 10px;
 }
 
 .morning-temp{
+    padding-top: 10px;
     text-align: left;
-    padding-left: 38px;
+    padding-left: 10px;
     padding-right: 0;
     font-family: 'Raleway', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -159,24 +206,30 @@ sup{
 }
 
 .highlights{
-    padding-top: 15px;
+    margin-top: 5%;
     margin-left: 10px;
     font-weight: bold;
     font-size: larger;
+    line-height: 0.5;
 }
 
 .highlights-content{
     width: 100%;
-    margin-top: 10px;
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
+    height: 120px;
+}
+
+.highlight-header{
+    margin-top: 10px;
 }
 
 .highlight-info-top{
     text-align: center;
-    width: 45%;
+    width: 40%;
     margin: 10px 40px 0 40px;
-    background-color: rgb(56, 56, 100);
+    background-color: rgb(37, 37, 73);
     font-weight: normal;
     font-size: small;
     color: rgba(219, 219, 219, 0.808);
@@ -187,7 +240,6 @@ sup{
     color: white;
     font-family: 'Raleway', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
     font-size: 50px;
-    line-height: 0;
 }
 
 .wind-unit{
@@ -196,7 +248,6 @@ sup{
      font-weight: normal;
      margin-top: 0;
      padding: 0;
-     line-height: 0;
 }
 
 .humidity-value{
@@ -204,7 +255,6 @@ sup{
     color: white;
     font-family: 'Raleway', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
     font-size: 50px;
-    line-height: 0;
 }
 
 .humidity-unit{
@@ -213,14 +263,13 @@ sup{
      font-weight: normal;
      margin-top: 0;
      padding: 0;
-     line-height: 0;
 }
 
 .highlight-info-bottom{
     text-align: center;
     width: 45%;
-    margin: 10px 40px 0 40px;
-    background-color: rgb(56, 56, 100);
+    margin: 10px 40px 5px 40px;
+    background-color: rgb(37, 37, 73);
     font-weight: normal;
     font-size: small;
     color: rgba(219, 219, 219, 0.808);
@@ -231,7 +280,7 @@ sup{
     color: white;
     font-family: 'Raleway', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
     font-size: 50px;
-    line-height: 0;
+    padding-bottom: 0
 }
 
 .visibility-unit{
@@ -240,7 +289,6 @@ sup{
      font-weight: normal;
      margin-top: 0;
      padding: 0;
-     line-height: 0;
 }
 
 .airpressure-value{
@@ -248,7 +296,6 @@ sup{
     color: white;
     font-family: 'Raleway', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
     font-size: 50px;
-    line-height: 0;
 }
 
 .airpressure-unit{
@@ -257,14 +304,240 @@ sup{
      font-weight: normal;
      margin-top: 0;
      padding: 0;
-     line-height: 0;
 }
 
 footer{
-    padding-top: 30px;
+    padding-top: 20px;
     text-align: center;
     font-family: 'Raleway', sans-serif, Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
     font-weight: normal;
     font-size: small;
     color: rgba(219, 219, 219, 0.808);
+}
+
+@media screen and (max-width: 1300px) {
+    .container{
+        margin: 20px;
+        margin-left: 70px;
+        width: 100%;
+    }
+    .cloud-image{
+        width: 70%;
+        margin-left: 15%;
+    }
+    .temp-number{
+        font-size: 100px;
+    }
+    .main-content{
+        margin: 20px 50px 10px 50px;
+    }
+    .day1,.day2,.day3,.day4,
+    .day5 {
+        width: 20%;
+        padding: 5px 0;
+        font-size: 14px;
+        text-align: center;
+        margin: 10px;
+    }
+    .afternoon-temp{
+        padding-left: 15px;
+    }
+    .highlights{
+        margin-top: 5%;
+        margin-left: 10px;
+        font-weight: bold;
+        font-size: large;
+    }
+    .highlights-content{
+            width: 100%;
+            margin-top: 15px;
+            display: flex;
+            flex-direction: row;
+            height: 120px;
+    }
+    .highlight-header{
+        margin-top: 5px;
+    }
+    .wind-value, .humidity-value, .visibility-value,
+    .airpressure-value{
+        font-size: 40px;
+    }
+    .wind-unit, .humidity-unit, .visibility-unit,
+    .airpressure-unit{
+        font-size: x-large;
+    }
+    .highlight-info-top, .highlight-info-bottom{
+        margin: 10px 40px 10px 40px;
+    }
+    footer{
+        padding: 8px 0 0 0;
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    footer{
+        padding: 8px 0 0 0;
+        margin-top: 0;
+    }
+    .highlight-info-bottom{
+       margin-top: 0;
+       margin-bottom: 25px;
+    }
+    .container{
+        margin-left: 50px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    footer{
+        padding: 8px 0 0 0;
+        margin-top: 0;
+    }
+    .highlight-info-bottom{
+       margin-top: 0;
+       margin-bottom: 25px;
+    }
+    .container{
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .one-quarter-row{
+        height: auto;
+    }
+
+    .day1, .day2, .day3, .day4,
+    .day5{
+        margin: 5px;
+    }
+
+    .temp-number{
+        font-size: 85px;
+    }
+    .temp-description{
+        margin-top: 20%;
+        font-size: 18px;
+    }
+    .weather-date{
+        margin-top: 20%;
+    }
+    .weather-location{
+        margin-top: 8%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .one-quarter-row{
+        height: auto;
+    }
+
+    .day1, .day2, .day3, .day4,
+    .day5{
+        margin: 5px;
+    }
+
+    .temp-number{
+        font-size: 85px;
+    }
+    .temp-description{
+        margin-top: 20%;
+        font-size: 18px;
+    }
+    .weather-date{
+        margin-top: 20%;
+    }
+    .weather-location{
+        margin-top: 8%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container{
+        margin-left: 20px;
+    }
+    
+    .temperature{
+        margin-left: 10%;
+        margin-top: 25%;
+        margin-bottom: 25%;
+        padding: 0;
+    }
+
+    .one-quarter-row{
+        width: 30%;
+    }
+
+    .cloud-image{
+        width: 65%;
+        margin-left: 17%;
+    }
+
+    .temp-description{
+        padding-top: 10%;
+        margin-bottom: 0;
+    }
+
+    .weather-date{
+        padding-top: 0;
+    }
+  
+    .weather-location{
+        padding-top: 0;
+    }
+    .main-content{
+        margin: 20px 30px 10px 30px;
+    }
+    .day1,.day2,.day3,.day4,
+    .day5 {
+        width: 20%;
+        padding: 5px 0;
+        font-size: 14px;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .morning-temp{
+        padding-left: 5px;
+    }
+    .afternoon-temp{
+        padding-left: 15px;
+    }
+    .highlights{
+        margin-top: 5%;
+        margin-left: 10px;
+        font-weight: bold;
+        font-size: large;
+    }
+    .highlights-content{
+            width: 100%;
+            margin-top: 15px;
+            display: flex;
+            flex-direction: row;
+            height: 120px;
+    }
+    .highlight-header{
+        margin-top: 5px;
+    }
+    .wind-value, .humidity-value, .visibility-value,
+    .airpressure-value{
+        font-size: 40px;
+    }
+    .wind-unit, .humidity-unit, .visibility-unit,
+    .airpressure-unit{
+        font-size: x-large;
+    }
+    .highlight-info-top, .highlight-info-bottom{
+        margin: 10px 40px 10px 40px;
+    }
+    footer{
+        padding: 8px 0 0 0;
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+
 }

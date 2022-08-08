@@ -622,7 +622,6 @@ footer{
         padding: 0 10px;
     }
    .weather-location{
-        padding-bottom: 20px;
-        margin: 40px 50px 40px 50px;
+       padding-bottom: 40px;
     }
 }

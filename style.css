@@ -58,8 +58,8 @@ input::placeholder{
 
 .cloud-image{
    max-width: 100%;
-   width: 40%;
-   margin: 15% 25%;
+   width: 60%;
+   margin: 40px 80px 40px 80px;
 }
 
 .temperature{
@@ -124,14 +124,14 @@ sup{
 
 /** main content **/
 .two-third-row{
-    width: 65%;
+    width: 70%;
     background-color: rgba(0, 0, 27, 0.959);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
 .main-content{
-    margin: 20px 90px 20px 90px;
+    margin: 20px 30px 20px 30px;
     color: white;
     /**display: block (in order to make the sections dropdown*/
     display: block;
@@ -227,12 +227,13 @@ sup{
 
 .highlight-info-top{
     text-align: center;
-    width: 40%;
+    width: 50%;
     margin: 10px 40px 0 40px;
     background-color: rgb(37, 37, 73);
     font-weight: normal;
     font-size: small;
     color: rgba(219, 219, 219, 0.808);
+    height: 100%;
 }
 
 .wind-value{
@@ -267,12 +268,13 @@ sup{
 
 .highlight-info-bottom{
     text-align: center;
-    width: 45%;
+    width: 50%;
     margin: 10px 40px 5px 40px;
     background-color: rgb(37, 37, 73);
     font-weight: normal;
     font-size: small;
     color: rgba(219, 219, 219, 0.808);
+    height: 100%;
 }
 
 .visibility-value{

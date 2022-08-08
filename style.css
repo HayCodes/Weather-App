@@ -624,4 +624,7 @@ footer{
    .weather-location{
        padding-bottom: 40px;
     }
+    .cloud-image{
+        margin-bottom: 15px;
+    }
 }

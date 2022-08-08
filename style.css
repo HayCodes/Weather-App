@@ -12,7 +12,7 @@
     height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow: hidden;
-    margin: 25px;
+    margin: 20px;
     flex-wrap: wrap;
 }
 
@@ -310,7 +310,8 @@ sup{
 
 footer{
     padding-top: 20px;
-    margin-top: 25px;
+    margin-bottom: 0;
+    margin-top: 20px;
     text-align: center;
     font-family: 'Raleway', sans-serif, Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
     font-weight: normal;

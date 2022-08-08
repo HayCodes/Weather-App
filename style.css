@@ -621,7 +621,8 @@ footer{
     .morning-temp, .afternoon-temp{
         padding: 0 10px;
     }
-    .weather-location{
+   .weather-location{
         padding-bottom: 20px;
+        margin: 40px 50px 40px 50px;
     }
 }

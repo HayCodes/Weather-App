@@ -315,305 +315,306 @@ footer{
     color: rgba(219, 219, 219, 0.808);
 }
 
-@media screen and (max-width: 1300px) {
+@media only screen and (max-width: 1080px) {
     .container{
-        margin: 20px;
-        margin-left: 70px;
         width: 100%;
+        margin: 20px;
     }
+
+    .cloud-image{
+        width: 60%;
+        margin-left: 50px;
+    }
+    
+    .temperature{
+        margin: 0;
+        padding: 45px;
+    }
+
+    .main-content{
+        margin: 10px;
+    }
+
+    .day1, .day2, .day3, .day4, .day5{
+        margin: 10px;
+        padding: 0;
+        width: 30%;
+    }
+
+    .highlights-content{
+        margin: 10px;
+    }
+    
+    .highlight-info-bottom{
+        margin-top: 0;
+    }
+
+    footer{
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    input::placeholder{
+        font-size: 10px;
+    }
+
+    .one-quarter-row{
+        width: 30%;
+    }
+
     .cloud-image{
         width: 70%;
-        margin-left: 15%;
+        margin-left: 40px;
     }
+
+    .temperature{
+        margin-left: -15px;
+    }
+
+    .weekly-forecast{
+        font-size: 14px;
+    }
+
+    .morning-temp, .afternoon-temp{
+        padding: 5px;
+    }
+
+    .main-content{
+        margin-bottom: 0
+    }
+
+    footer{
+        padding: 35px 0 0 0;
+    }
+    
+
+
+}
+
+@media only screen and (max-width: 620px) {
+    .container{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .one-quarter-row{
+        width: 35%;
+        height: auto;
+    }
+
+    .search-bar{
+        margin: 10px;
+    }
+
+    input::placeholder{
+        font-size: 9px;
+        padding-left: 5px;
+        margin: 0;
+    }
+
+    .cloud-image{
+        width: 80%;
+        margin-left: 15px;
+    }
+
+    .temperature{
+        margin: 0;
+        padding: 50px;
+        padding-left: 5px;
+    }
+
     .temp-number{
         font-size: 100px;
     }
-    .main-content{
-        margin: 20px 50px 10px 50px;
+    
+    .temp-symbol{
+        font-size: 40px;
     }
-    .day1,.day2,.day3,.day4,
-    .day5 {
-        width: 20%;
-        padding: 5px 0;
-        font-size: 14px;
-        text-align: center;
+
+    .temp-description{
+        padding-top: 10px;
+    }
+    .weather-date{
+        padding-top: 20px;
+    }
+
+    .two-third-row{
+        width: 65%;
+    }
+
+    .main-content{
+        margin: 0;
+    }
+    
+   .celsius-deg{
+        width: auto;
+        height: auto;
+    }
+
+    .fahrenheit-deg{
+        width: 15px;
+        height: auto;
+    }
+
+    .weekly-forecast{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-left: 20px;
+    }
+
+    .day1, .day2, .day3, .day4 {
+        width: 35%;
         margin: 10px;
     }
-    .afternoon-temp{
-        padding-left: 15px;
+
+    .weekly-weather{
+        width: 30%;
     }
-    .highlights{
-        margin-top: 5%;
-        margin-left: 10px;
-        font-weight: bold;
-        font-size: large;
+
+    .day5{
+        display: none;
     }
+
+    .morning-temp, .afternoon-temp{
+        text-align: center;
+        padding: 0 10px 0 10px ;
+    }
+
+    .highlight-text{
+        font-size: 15px;
+    }
+
     .highlights-content{
-            width: 100%;
-            margin-top: 15px;
-            display: flex;
-            flex-direction: row;
-            height: 120px;
+        display: flex;
+        width: 100%;
+        margin-bottom: 10px;
+        margin-left: 5px;
+        height: fit-content;
     }
-    .highlight-header{
-        margin-top: 5px;
+
+    .highlight-info-top, .highlight-info-bottom{
+        margin: 2px;
+        width: 60%;
+        margin-right: 10px;
+        overflow: visible;
+        height: fit-content;
+        padding-bottom: 20px;
     }
+
     .wind-value, .humidity-value, .visibility-value,
     .airpressure-value{
-        font-size: 40px;
+        font-size: 30px;
+        padding-top: 10px;
+        padding-bottom: 0;
+
     }
+
     .wind-unit, .humidity-unit, .visibility-unit,
     .airpressure-unit{
-        font-size: x-large;
+        font-size: 25px;
     }
-    .highlight-info-top, .highlight-info-bottom{
-        margin: 10px 40px 10px 40px;
-    }
+
     footer{
-        padding: 8px 0 0 0;
-        margin-bottom: 0;
-        margin-top: 10px;
-    }
-
-}
-
-@media screen and (min-width: 992px) {
-    footer{
-        padding: 8px 0 0 0;
-        margin-top: 0;
-    }
-    .highlight-info-bottom{
-       margin-top: 0;
-       margin-bottom: 25px;
-    }
-    .container{
-        margin-left: 50px;
-    }
-
-}
-
-@media screen and (max-width: 992px) {
-    footer{
-        padding: 8px 0 0 0;
-        margin-top: 0;
-    }
-    .highlight-info-bottom{
-       margin-top: 0;
-       margin-bottom: 25px;
-    }
-    .container{
-        margin-left: 50px;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .one-quarter-row{
-        height: auto;
-    }
-
-    .day1, .day2, .day3, .day4,
-    .day5{
-        margin: 5px;
-    }
-
-    .temp-number{
-        font-size: 85px;
-    }
-    .temp-description{
-        margin-top: 20%;
-        font-size: 18px;
-    }
-    .weather-date{
-        margin-top: 20%;
-    }
-    .weather-location{
-        margin-top: 8%;
-    }
-}
-
-@media screen and (min-width: 900px) {
-    .one-quarter-row{
-        height: auto;
-    }
-
-    .day1, .day2, .day3, .day4,
-    .day5{
-        margin: 5px;
-    }
-
-    .temp-number{
-        font-size: 85px;
-    }
-    .temp-description{
-        margin-top: 20%;
-        font-size: 18px;
-    }
-    .weather-date{
-        margin-top: 20%;
-    }
-    .weather-location{
-        margin-top: 8%;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .container{
-        margin-left: 20px;
-    }
-    
-    .temperature{
-        margin-left: 10%;
-        margin-top: 25%;
-        margin-bottom: 25%;
         padding: 0;
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .container{
+        width: 99%;
+        margin-left: 3px;
+    }
+    .one-quarter-row{
+        width: 40%;
+        overflow: hidden;
+    }
+    .two-third-row{
+        width: 59%
+    }
+    .search-bar{
+        margin: 5px;
+    }
+    .icon-class{
+        width: 20%;
+    }
+    .icon-class>img{
+        height: 15px;
+        width: 15px;
+        float: right;
+        margin-top: 3px;
     }
 
-    .one-quarter-row{
-        width: 30%;
+    input::placeholder{
+        font-size: 8px;
+        margin: 0;
+        padding-left: 2px;
     }
 
     .cloud-image{
-        width: 65%;
-        margin-left: 17%;
+        width: 90%;
+        margin-left: 5px;
     }
 
-    .temp-description{
-        padding-top: 10%;
-        margin-bottom: 0;
-    }
-
-    .weather-date{
-        padding-top: 0;
-    }
-  
-    .weather-location{
-        padding-top: 0;
-        margin-bottom: 10px;
-        padding-bottom: 10px;
-    }
-    .main-content{
-        margin: 20px 30px 10px 30px;
-    }
-    .day1,.day2,.day3,.day4,
-    .day5 {
-        width: 20%;
-        padding: 5px 0;
-        font-size: 14px;
-        text-align: center;
-        margin: 5px;
-    }
-
-    .morning-temp{
-        padding-left: 5px;
-    }
-    .afternoon-temp{
-        padding-left: 15px;
-    }
-
-}
-
-@media screen and (min-width: 800px) {
-    .container{
-        margin-left: 20px;
+    .temp-number{
+        font-size: 80px;
     }
     
-    .temperature{
-        margin-left: 10%;
-        margin-top: 25%;
-        margin-bottom: 25%;
-        padding: 0;
+    .temp-symbol{
+       font-size: 35px;
     }
 
-    .one-quarter-row{
-        width: 30%;
+    .weekly-forecast{
+     margin-top: 5px;
+     margin-left: 0;
     }
 
-    .cloud-image{
-        width: 65%;
-        margin-left: 17%;
+    .day1, .day2{
+       width: 100%;
+       margin: 5px 30px 5px 30px;
     }
 
-    .temp-description{
-        padding-top: 10%;
-        margin-bottom: 0;
+    .day3, .day4, .day5{
+        display: none;
     }
 
-    .weather-date{
-        padding-top: 0;
-    }
-  
-    .weather-location{
-        padding-top: 0;
-        margin-bottom: 10px;
-        padding-bottom: 10px;
-    }
-    .main-content{
-        margin: 20px 30px 10px 30px;
-    }
-    .day1,.day2,.day3,.day4,
-    .day5 {
-        width: 20%;
-        padding: 5px 0;
-        font-size: 14px;
-        text-align: center;
-        margin: 5px;
+    .weekly-weather{
+        margin: 5px 0 0 0 ;
     }
 
-    .morning-temp{
-        padding-left: 5px;
+    .morning-temp, .afternoon-temp{
+        padding: 0 20px;
     }
+
     .afternoon-temp{
-        padding-left: 15px;
+        padding-left: 30px;
+        padding-right: 0;
     }
 
-}
-
-@media screen and (max-width: 750px) {
-    .day1, .day2, .day3, .day4, .day5 > p{
+    .highlight-text{
         font-size: 12px;
     }
-}
 
-@media screen and (max-width: 710px) {
-    .wind-value, .visibility-value, 
-    .airpressure-value, .humidity-value{
-        font-size: 40px;
+    .wind-value, .humidity-value, .visibility-value,
+    .airpressure-value{
+       font-size: 25px;
     }
 
-    .wind-unit, .visibility-unit, 
-    .airpressure-unit, .humidity-unit{
-        font-size: 25px;
+    .wind-unit, .humidity-unit, .visibility-unit,
+    .airpressure-unit{
+       font-size: 15px;
     }
 
-    .highlight-info-top, .highlight-info-bottom{
-        margin: 10px 30px;
-    }
-}
-
-@media screen and (max-width: 690px) {
-    .main-content{
-        margin-left: 25px;
-        margin-right: 25px;
-    }
-
-    .wind-value, .visibility-value, 
-    .airpressure-value, .humidity-value{
-        font-size: 40px;
-    }
-
-    .wind-unit, .visibility-unit, 
-    .airpressure-unit, .humidity-unit{
-        font-size: 25px;
-    }
-
-    .highlight-info-top, .highlight-info-bottom{
-        margin: 10px 30px;
+    footer{
+        font-size: 8px;
+    
     }
 }
 
-@media screen and (max-width: 600px) {
-    .main-content{
-        margin-left: 20px;
-        margin-right: 20px;
+@media only screen and (max-width: 310px) {
+    .morning-temp, .afternoon-temp{
+        padding: 0 10px;
     }
 }

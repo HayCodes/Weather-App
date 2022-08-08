@@ -623,6 +623,7 @@ footer{
     }
    .weather-location{
        padding-bottom: 40px;
+       font-size: 10px;
     }
     .cloud-image{
         margin-bottom: 15px;
